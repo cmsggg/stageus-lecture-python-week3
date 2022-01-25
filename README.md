@@ -15,7 +15,6 @@
 
 # Class Diagram
 
-```mermaid
  classDiagram
       Animal <|-- Duck
       Animal <|-- Fish
@@ -37,4 +36,3 @@
           +bool is_wild
           +run()
       }
-```
