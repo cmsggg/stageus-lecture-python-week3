@@ -17,56 +17,56 @@
 
 ```mermaid
 classDiagram
-      Kiosk --> MenuList
-      Kiosk --> Cart
-      Kiosk --> Payment
-      MenuList --> Menu
-      class Kiosk{
-	  +MenuList menuList
-	  +Cart cart
-	  +Payment payment
-	  +Boolean isFinish
-          +__init__()
-          +start()
-          +addCart()
-          +showCart()
-          +pay()
-      }
-      class Menu{
-	  +String type
-	  +String name
-	  +Int price
-	  +Int stock
-	  +__init__()
-	  +setStock()
-	  +printMenu()
-      }
-      class MenuList{
-	  +List menuInfoList
-	  +List menuList
-          +__init__()
-          +printType()
-          +printMenuList(Int)
-          +getMenu(Int, Int)
-      }
-      class Cart{
-	  +List cartList
-          +__init__()
-          +addMenu(Menu)
-          +delMenu()
-          +printCart()
-          +printCartInfo()
-          +getTotalNumber()
-          +getTotalPrice()
-      }
-      class Payment {
-	  +Cart cart
-	  +Int totalPrice
-	  +Int money
-	  +Int rest
-	  +__init__(Cart)
-	  +cash()
-	  +card()
-	  +printReceipt()
-      }
+Kiosk --> MenuList
+Kiosk --> Cart
+Kiosk --> Payment
+MenuList --> Menu
+class Kiosk{
+    +MenuList menuList
+    +Cart cart
+    +Payment payment
+    +Boolean isFinish
+    +__init__()
+    +start()
+    +addCart()
+    +showCart()
+    +pay()
+}
+class Menu{
+    +String type
+    +String name
+    +Int price
+    +Int stock
+    +__init__()
+    +setStock()
+    +printMenu()
+}
+class MenuList{
+    +List menuInfoList
+    +List menuList
+    +__init__()
+    +printType()
+    +printMenuList(Int)
+    +getMenu(Int, Int)
+}
+class Cart{
+    +List cartList
+    +__init__()
+    +addMenu(Menu)
+    +delMenu()
+    +printCart()
+    +printCartInfo()
+    +getTotalNumber()
+    +getTotalPrice()
+}
+class Payment {
+    +Cart cart
+    +Int totalPrice
+    +Int money
+    +Int rest
+    +__init__(Cart)
+    +cash()
+    +card()
+    +printReceipt()
+}
 ```
