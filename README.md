@@ -15,5 +15,5 @@
 
 ## Class Diagram
 
-<img src="/res/cd.jpg" width="617" height="540" align="center">
+<p align="center"><img src="/res/cd.jpg" width="617" height="540"></p>
 
