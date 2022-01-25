@@ -15,6 +15,6 @@
 
 ## Class Diagram
 
-<div style="text-align: center">
-  <img src="/res/cd.jpg" width="617" height="540">
+<div style="text-align: center;">
+  <img src="/res/cd.jpg" width="617" height="540" style="margin-left: auto; margin-right: auto;">
 </div>
