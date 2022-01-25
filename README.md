@@ -17,8 +17,10 @@
 
 ```mermaid
 classDiagram
-Kiosk --> MenuList
-Kiosk --> Cart
-Kiosk --> Payment
-MenuList --> Menu
+class BankAccount{
+    +String owner
+    +BigDecimal balance
+    +deposit(amount)
+    +withdrawl(amount)
+}
 ```
