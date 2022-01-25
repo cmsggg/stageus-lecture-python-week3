@@ -15,4 +15,4 @@
 
 ## Class Diagram
 
-<img src="/res/cd.jpg" width="150" height="130">
+<img src="/res/cd.jpg" width="617" height="540">
