@@ -15,13 +15,11 @@
 
 # Class Diagram
 
-```mermaid
-classDiagram
+graph TD;
       Kiosk --> MenuList
       Kiosk --> Cart
       Kiosk --> Payment
       MenuList --> Menu
-      
       class Kiosk{
 	      +MenuList menuList
 	      +Cart cart
@@ -70,4 +68,3 @@ classDiagram
 	      +card()
 	      +printReceipt()
       }
-```
