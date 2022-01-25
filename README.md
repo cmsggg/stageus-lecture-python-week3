@@ -16,10 +16,10 @@
 # Class Diagram
 
 graph TD;
-      Kiosk --> MenuList
-      Kiosk --> Cart
-      Kiosk --> Payment
-      MenuList --> Menu
+      Kiosk --> MenuList;
+      Kiosk --> Cart;
+      Kiosk --> Payment;
+      MenuList --> Menu;
       class Kiosk{
 	      +MenuList menuList
 	      +Cart cart
