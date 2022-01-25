@@ -1,4 +1,5 @@
 # 프로그램 명세
+
 개발 언어 : Python 3  
 과정 : [기초 과정] 파이썬 응용 프로그램 과정  
 주차 : 3주차  
@@ -14,45 +15,59 @@
 
 # Class Diagram
 
-## Kiosk Class
-|Name				|Explain							|type		|
-|:------------------|:----------------------------------|:----------|
-|init()				|필요한 객체 선언 및 멤버 변수 선언		|생성자		|
-|start()			|프로그램 구동 함수					|양식 함수	|
-|addCart()			|메뉴 담기 지문 출력 함수				|양식 함수	|
-|showCart()			|장바구니 지문 출력 함수				|양식 함수	|
-|pay()				|결제 지문 출력 함수					|양식 함수	|
-
-## Menu Class
-|Name				|Explain							|type		|
-|:------------------|:----------------------------------|:----------|
-|init()				|메뉴 정보 멤버 변수 선언 및 초기화		|생성자		|
-|setStock()			|메뉴 재고 설정 및 재고 부족 체크 함수	|양식 함수	|
-|printMenu()		|메뉴 정보 출력 함수					|출력 함수	|
-
-## MenuList Class
-|Name							|Explain							|type		|
-|:------------------------------|:----------------------------------|:----------|
-|init()							|메뉴 정보 및 메뉴 멤버 변수 선언		|생성자		|
-|printType()					|카테고리 목록 출력함수				|출력 함수	|
-|printMenuList(typeIndex)		|메뉴 목록 출력 함수					|출력 함수	|
-|getMenu(typeIndex, menuIndex)	|메뉴 반환 함수						|반환 함수	|
-
-## Cart Class
-|Name				|Explain							|type		|
-|:------------------|:----------------------------------|:----------|
-|init()				|장바구니 목록 멤버 변수 선언			|생성자		|
-|addMenu(Menu)		|장바구니 Menu 추가 함수수			|양식 함수	|
-|delMenu()			|장바구니 Menu 삭제 함수				|양식 함수	|
-|printCart()		|장바구니 목록 출력 함				|출력 함수	|
-|printCartInfo()	|장바구니 정보 출력 함수				|출력 함수	|
-|calTotalNumber()	|장바구니 상품 개수 함수				|반환 함수	|
-|calTotalPrice()	|장바구니 총 금액 함수				|반환 함수	|
-
-## Payment Class
-|Name				|Explain									|type		|
-|:------------------|:------------------------------------------|:----------|
-|init(Cart)			|필요한 객체 저장 및 금액 관련 멤버 변수 선언	|생성자		|
-|cash()				|현금 결제 함수								|양식 함수	|
-|card()				|카드 결제 함수								|양식 함수	|
-|printReceipt()		|영수증 출력 함수								|출력 함수	|
+```mermaid
+classDiagram
+      Kiosk --> MenuList
+      Kiosk --> Cart
+      Kiosk --> Payment
+      MenuList --> Menu
+      
+      class Kiosk{
+	      +MenuList menuList
+	      +Cart cart
+	      +Payment payment
+	      +Boolean isFinish
+          +__init__()
+          +start()
+          +addCart()
+          +showCart()
+          +pay()
+      }
+      class Menu{
+	      +String type
+	      +String name
+	      +Int price
+	      +Int stock
+	      +__init__()
+	      +setStock()
+	      +printMenu()
+      }
+      class MenuList{
+	      +List menuInfoList
+	      +List menuList
+          +__init__()
+          +printType()
+          +printMenuList(Int)
+          +getMenu(Int, Int)
+      }
+      class Cart{
+	      +List cartList
+          +__init__()
+          +addMenu(Menu)
+          +delMenu()
+          +printCart()
+          +printCartInfo()
+          +getTotalNumber()
+          +getTotalPrice()
+      }
+      class Payment {
+	      +Cart cart
+	      +Int totalPrice
+	      +Int money
+	      +Int rest
+	      +__init__(Cart)
+	      +cash()
+	      +card()
+	      +printReceipt()
+      }
+```
