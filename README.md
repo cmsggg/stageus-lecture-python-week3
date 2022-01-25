@@ -15,4 +15,4 @@
 
 ## Class Diagram
 
-![Cannot find Image](/res/cd.jpg){: width="612" height="540"}
+![Cannot find Image](/res/cd.jpg){: width="306" height="270"}
