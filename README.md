@@ -15,4 +15,4 @@
 
 # Class Diagram
 
-![Cannot find Image](/res/cd.png)
+![Cannot find Image](/res/cd.jpg)
