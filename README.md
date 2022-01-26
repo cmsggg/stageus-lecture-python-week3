@@ -6,7 +6,7 @@
 과제 : 카페의 Kiosk 소프트웨어 개발  
 목표 : 개발 시작 전, 기능을 구상하고 프로그램의 Class Diragram을 설계하여 이를 기반으로 개발하는 과제
 
-## Method Description
+## Conditions of Class Diagram
 
 1. 코드의 가독성과 유지보수성을 올리기 위해 파일, 변수, 함수의 이름을 체계적으로 지어야 함.
 2. Class는 모듈화를 목표로, 각 Class가 다른 Class에 의존되지 않도록 독릭적으로 작성해야 함.
