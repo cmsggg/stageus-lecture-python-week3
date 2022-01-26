@@ -1,10 +1,10 @@
 ## Project Description
 
-개발 언어 : Python 3  
-과정 : [기초 과정] 파이썬 응용 프로그램 과정  
-주차 : 3주차  
-과제 : 카페의 Kiosk 소프트웨어 개발  
-목표 : 개발 시작 전, 기능을 구상하고 프로그램의 Class Diragram을 설계하여 이를 기반으로 개발하는 과제
+- 개발 언어 : Python 3  
+- 과정 : [기초 과정] 파이썬 응용 프로그램 과정  
+- 주차 : 3주차  
+- 과제 : 카페의 Kiosk 소프트웨어 개발  
+- 목표 : 개발 시작 전, 기능을 구상하고 프로그램의 Class Diragram을 설계하여 이를 기반으로 개발하는 과제
 
 ## Conditions of Class Diagram
 
@@ -17,8 +17,8 @@
 
 ## Explain
 
-Class Diragram에는 정답이 존재하지 않기에, 자신이 이렇게 설계한 근거를 정하여 이를 토대로 설계를 진행햐는게 올바른 모습.  
-따라서 아래 Class Diagream은 본인의 근거를 토대로 설계하였음.  
+- Class Diragram에는 정답이 존재하지 않기에, 자신이 이렇게 설계한 근거를 정하여 이를 토대로 설계를 진행햐는게 올바른 모습.  
+- 따라서 아래 Class Diagream은 본인의 근거를 토대로 설계하였음.  
 
 ## Class Diagram
 
