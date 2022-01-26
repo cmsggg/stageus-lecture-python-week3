@@ -22,4 +22,4 @@ Class Diragram에는 정답이 존재하지 않기에, 자신이 이렇게 설�
 
 ## Class Diagram
 
-<p align="center"><img src="/res/cd.jpg" width="617" height="540"></p>
+<p align="center"><img src="cd.png" width="617" height="540"></p>
