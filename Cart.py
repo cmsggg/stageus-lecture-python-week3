@@ -25,15 +25,15 @@ class Cart:
 
     # 장바구니 정보 출력 함수
     def printCartInfo(self):
-        print("총 개수 : " + str(self.calTotalNumber()))
-        print("총합 가격 : " + str(self.calTotalPrice()))
+        print("총 개수 : " + str(self.getTotalNumber()))
+        print("총합 가격 : " + str(self.getTotalPrice()))
 
     # 장바구니 상품 개수 반환 함수
-    def calTotalNumber(self):
+    def getTotalNumber(self):
         return len(self.cartList)
 
     # 장바구니 총합 가격 반환 함수
-    def calTotalPrice(self):
+    def getTotalPrice(self):
         totalPrice = 0
 
         for index in range(0, len(self.cartList)):

@@ -3,7 +3,7 @@ class Payment:
     # 생성자. cart 객체 멤버 변수와 금액 관련 멤버 변수 생성
     def __init__(self, cart):
         self.cart = cart
-        self.totalPrice = self.cart.calTotalPrice()
+        self.totalPrice = self.cart.getTotalPrice()
         self.money = 0
         self.rest = 0
 
