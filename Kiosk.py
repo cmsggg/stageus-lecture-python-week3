@@ -58,7 +58,7 @@ class Kiosk:
                         self.menuList.getMenu(typeSelect-1, menuSelect-1).printMenu("result")
                         print(" 추가 완료")
 
-    # 장바구니 관리 함수
+    # 장바구니 관리 양식 출력 함수
     def showCart(self):
         print("\n[ 장바구니 보기 ] 페이지 입니다.")
 
@@ -74,7 +74,7 @@ class Kiosk:
             elif passageSelect == 2:
                 self.cart.delMenu()
 
-    # 결제 함수
+    # 결제 진행 양식 출력 함수
     def pay(self):
         self.payment = Payment(self.cart)
         print("\n[ 결제 ] 페이지 입니다.")
