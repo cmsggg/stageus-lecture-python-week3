@@ -37,15 +37,15 @@ class Kiosk:
 
     # OrderForm Class 실행
     def orderForm(self):
-        orderFormObject = OrderForm(self.cart)
+        orderFormObject = OrderForm(self.cart)   # 멤버 변수가 아닌 지역 변수로 선언하여, 사용이 끝나면 바로 메모리에서 삭제되도록 설정
         orderFormObject.printForm()
 
     # CartForm Class 실행
     def cartForm(self):
-        cartFormObject = CartForm(self.cart)
+        cartFormObject = CartForm(self.cart)   # 멤버 변수가 아닌 지역 변수로 선언하여, 사용이 끝나면 바로 메모리에서 삭제되도록 설정
         cartFormObject.printForm()
 
     # PaymentForm Class 실행
     def paymentForm(self):
-        paymentFormObject = PaymentForm(self.cart)
+        paymentFormObject = PaymentForm(self.cart)   # 멤버 변수가 아닌 지역 변수로 선언하여, 사용이 끝나면 바로 메모리에서 삭제되도록 설정
         paymentFormObject.printForm()
