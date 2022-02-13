@@ -72,13 +72,13 @@ class Database:
     def getMenuCount(self, categoryIndex):
         return len(self.menuList[categoryIndex])
 
-    # 메뉴 반환 함수
-    def getMenu(self, categoryIndex, menuIndex):
-        return self.menuList[categoryIndex][menuIndex]
-
     # 메뉴 출력 함수
     def printMenu(self, categoryIndex, index):
         tmpData = self.menuList[categoryIndex][index]
         print("%-6s" % tmpData[0], end="")
         print("%-20s" % tmpData[1], end="")
         print("%-6d" % tmpData[2])
+
+    # 메뉴 반환 함수
+    def getMenu(self, categoryIndex, menuIndex):
+        return self.menuList[categoryIndex][menuIndex]
