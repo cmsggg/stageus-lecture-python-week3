@@ -29,4 +29,4 @@
 
 ## Class Diagram
 
-<p align="center"><img src="cd.png" width="617" height="540"></p>
+<p align="center"><img src="classdiagram.png" width="617" height="540"></p>
